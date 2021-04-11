@@ -31,14 +31,6 @@ jobs:
       run: |
         sudo apt install google-chrome-stable
         sudo apt-get install firefox
-    - name: Check the console scripts interface
-      run: |
-        calendarapp
-        capp
-    - name: Install chromedriver and geckodriver (Firefox Webdriver)
-      run: |
-        calendarapp install chromedriver
-        calendarapp install geckodriver
     - name: Make sure pytest is working
       run: |
         echo "def test_1(): pass" > nothing.py
