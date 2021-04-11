@@ -5,8 +5,7 @@ setup(
     version='1.0.0',
     install_requires=[
         'selenium',
-        'pytest',
-        'webdriver-manager'
+        'pytest'
     ],
     packages=find_packages()
 )
