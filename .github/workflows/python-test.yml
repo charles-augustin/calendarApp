@@ -11,7 +11,7 @@ jobs:
 
     env:
       PY_COLORS: "1"
-    runs-on: ubuntu-18.04
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       max-parallel: 1
@@ -27,10 +27,6 @@ jobs:
     - name: Install CalendarApp
       run: |
         python setup.py install
-    - name: Install Chrome and Firefox
-      run: |
-        sudo apt install google-chrome-stable
-        sudo apt-get install firefox
     - name: Make sure pytest is working
       run: |
         echo "def test_1(): pass" > nothing.py
