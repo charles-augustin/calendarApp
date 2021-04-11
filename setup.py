@@ -6,10 +6,7 @@ setup(
     install_requires=[
         'selenium',
         'pytest',
-        'webdriver-manager',
-        'pytest-html',
-        'openpyxl',
-        'allure-pytest'
+        'webdriver-manager'
     ],
     packages=find_packages()
 )
