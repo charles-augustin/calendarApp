@@ -7,15 +7,10 @@ from selenium.webdriver.firefox.service import Service as FireFoxService
 
 
 @pytest.fixture()
-def setup(browser):
+def setup():
     chrome_service = ChromeService(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=chrome_service)
-    if browser == 'chrome':
-        print("Launching chrome browser.........")
-    elif browser == 'firefox':
-        firefox_service = FireFoxService(GeckoDriverManager().install())
-        driver = webdriver.Firefox(service=firefox_service)
-        print("Launching firefox browser.........")
+    print("Launching chrome browser")
     return driver
 
 
