@@ -5,12 +5,13 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.firefox.service import Service as FireFoxService
 
+driver_path = ".\\drivers\\chromedriver.exe"
 
 @pytest.fixture()
 def setup():
-    chrome_service = ChromeService(ChromeDriverManager().install())
+    chrome_service = ChromeService(driver_path)
     driver = webdriver.Chrome(service=chrome_service)
-    print("Launching chrome browser")
+    print("Launching chrome browser...")
     return driver
 
 
