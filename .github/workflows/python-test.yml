@@ -37,4 +37,4 @@ jobs:
         pytest nothing.py
     - name: Run pytest test_login.py
       run: |
-        pytest -v testCases/test_login.py
+        python -m pytest -v testCases/test_login.py
