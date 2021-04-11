@@ -35,6 +35,6 @@ jobs:
       run: |
         echo "def test_1(): pass" > nothing.py
         pytest nothing.py
-    - name: Run pytest test_login.py --browser=chrome --headless
+    - name: Run pytest test_login.py
       run: |
-        pytest -v testCases/test_login.py --browser=chrome
+        pytest -v testCases/test_login.py
