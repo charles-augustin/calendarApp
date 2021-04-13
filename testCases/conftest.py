@@ -1,9 +1,6 @@
 import pytest
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.firefox.service import Service as FireFoxService
 
 driver_path = ".\\drivers\\chromedriver.exe"
 
