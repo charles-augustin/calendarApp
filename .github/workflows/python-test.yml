@@ -27,10 +27,9 @@ jobs:
     - name: Install CalendarApp dependencies
       run: |
         python setup.py install
-    - name: Make sure pytest is working
-      run: |
-        echo "def test_1(): pass" > nothing.py
-        pytest nothing.py
     - name: Run pytest test_login.py
       run: |
         python -m pytest -v testCases/test_login.py
+    - name: Run pytest test_register.py
+      run: |
+        python -m pytest -v testCases/test_register.py
